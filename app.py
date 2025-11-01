@@ -4,7 +4,7 @@ import os
 import PIL.Image
 
 # Set API Key for Google Gemini
-os.environ["GOOGLE_API_KEY"] = "Enter your google api key"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyDYLtzKh0FPqyb696KWNi8owmo0NysIhyM"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Load the Gemini Model
@@ -64,4 +64,5 @@ if uploaded_image:
     with col2:
         st.markdown("### AI Prediction Result")
         st.write(person_info)
+
 
