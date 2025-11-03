@@ -4,11 +4,11 @@ import os
 import PIL.Image
 
 # Set API Key for Google Gemini
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDYLtzKh0FPqyb696KWNi8owmo0NysIhyM"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyD_Uu40EIvd5USGmv8dbTmbLnpUdszZZGg"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Load the Gemini Model
-model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 
 # Function to analyze human attributes
@@ -64,5 +64,6 @@ if uploaded_image:
     with col2:
         st.markdown("### AI Prediction Result")
         st.write(person_info)
+
 
 
